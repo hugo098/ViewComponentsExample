@@ -1,0 +1,25 @@
+﻿@{
+	ViewBag.Title = "Home";
+}
+
+<h1>Home</h1>
+
+<div id="myComponentContainer"></div>
+
+@*<script>
+	var container = $("#myComponentContainer");
+	console.log("Here")
+	var refreshComponent = function () {
+		$.get("/MyViewComponent", function (data) { container.html(data); });
+	};
+	refreshComponent()
+</script>*@
+
+@*@await Component.InvokeAsync("Grid")*@
+
+
+<button id="load-friends-button">Load Friends</button>
+
+<div id = "list"></div>
+
+<script src="~/js/friends.js"></script>
